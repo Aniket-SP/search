@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Searching</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+
+<body>
+    <div id="all">
+        <h1 id="search-heading">Search Items</h1>
+
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search">
+            <div id="search-results"></div>
+        </div>
+
+        <h1 id="Selected-items">Selected Items</h1>
+        <div id="result-container">
+        </div>
+    </div>
+    <div id="button">
+        <button id="submitbutton" >Click Me</button>
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="{{ url_for('static', filename='js/app.js') }}" type="module"></script>
+    <script src="{{ url_for('static', filename='js/addOrRemove.js') }}" type="module"></script>
+    <script src="{{ url_for('static', filename='js/dropDown.js') }}" type="module"></script>
+    <script src="{{ url_for('static', filename='js/createOrder.js') }}" type="module"></script>
+</body>
+
+</html>
